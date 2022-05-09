@@ -11,7 +11,7 @@ export class SubmitFeedbackUseCase {
 
   constructor(
     private feedbacksRepository: FeedbacksRepository,
-    private mailAdapter: MailAdapter
+    private mailAdapter: MailAdapter,
   ) {}
 
   async execute(request: SubmitFeedbackUseCaseRequest) { // executará a criação/submissão de um novo feedback
